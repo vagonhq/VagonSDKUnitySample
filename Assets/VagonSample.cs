@@ -19,6 +19,7 @@ public class VagonSample : MonoBehaviour
         {
             Debug.Log("Got " + e.Data);
             msgCount++;
+            ws.Send(e.Data);
         };
     }
 
